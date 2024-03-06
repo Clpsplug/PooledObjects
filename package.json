@@ -1,0 +1,16 @@
+{
+  "name": "com.clpsplug.pooled-objects",
+  "version": "0.9.0",
+  "displayName": "ClpsPLUG's Pooled Objects",
+  "description": "Yet another way to pool objects for better memory management.",
+  
+  "author": {
+    "name": "Collapsed Plug",
+    "email": "hsp.tosh.5200113@gmail.com",
+    "url": "https://clpsplug.com"
+  },
+  "dependencies": {
+  },
+  "license": "MIT",
+  "keywords": ["memory-pool", "optimization"]
+}
