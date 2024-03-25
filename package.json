@@ -1,6 +1,6 @@
 {
   "name": "com.clpsplug.pooled-objects",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "displayName": "ClpsPLUG's Pooled Objects",
   "description": "Yet another way to pool objects for better memory management.",
   
