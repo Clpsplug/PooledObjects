@@ -57,7 +57,7 @@ namespace Clpsplug.PooledObjects.Runtime
         /// Total instance count. Can change depending on <see cref="ExhaustionBehaviour"/>.
         /// </summary>
         public abstract int instanceCount { get; }
-        
+
         /// <summary>
         /// What happens if the pool exhausts its available instances?
         /// </summary>
@@ -117,7 +117,7 @@ namespace Clpsplug.PooledObjects.Runtime
                     OnDestroy(item);
                 }
             }
-            
+
             _pool.Clear();
             for (var i = 0; i < instanceCountAtStart; i++)
             {
@@ -234,9 +234,11 @@ namespace Clpsplug.PooledObjects.Runtime
             {
                 OnDestroy(item);
             }
+
+            NextInstanceId = 0;
             _pool.Clear();
         }
-        
+
         /// <summary>
         /// Called when an instance is created (i.e., <see cref="Initialize"/>.)
         /// The component should initialise its state.
